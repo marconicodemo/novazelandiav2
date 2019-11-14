@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  h1
+  {
+      font-size:50px;
+      font-weight: bold;
+  }
+  /* Style the body */
+  body 
+  {
+    
+    margin: 0;
+  }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {
+      float: right;
+  margin-right: 5%;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #4CAF50;}
+  
+  ul.topnav li.left {
+      float: left;
+  margin-left: 5%;}
+  
+  /* Header/logo Title */
+  .header 
+  {
+      padding: 300px;
+      background-image: url("HOME.jpg");
+      background-size: cover;
+      
+  }
+
+  .content {
+  
+    margin: 5%;
+    width: 90%;
+    padding: 5px;
+     
+}
+
+
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+  div.a
+    {
+        text-align: center;
+        margin-right:5%; 
+      margin-left: 5%;
+
+        
+}
+
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: rgb(10, 10, 10);
+  }
+
+
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+      ul.topnav li.left, 
+      ul.topnav li {float: none;}
+    }
+
+    @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+    @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+
+
+
+        
